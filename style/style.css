@@ -1,0 +1,83 @@
+/* * */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #b6fbff, #bdd8ff, #b6fbff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+}
+/** MAIN-GAME  */
+.main-game {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** GENIUS */
+    .genius {
+        display: grid;
+        grid-template-areas: 'green red' 'yellow blue';
+        grid-gap: 10px;
+        border: 1px solid #000000;
+        background-color: #000000;
+        border-radius: 100%;
+        width: 400px;
+        height: 400px;
+    }
+
+
+    
+
+/** RED */
+
+.green {
+    background: radial-gradient(green, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    grid-area: 'green';
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 60%
+}
+/** GREEN */
+
+.red {
+    background: radial-gradient(red, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    grid-area: 'red';
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 60%;
+}
+
+/** BLUE */
+
+.blue {
+    background: radial-gradient(blue, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    grid-area: 'blue';
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 60%;
+    /* filter: brightness(50%); */
+}
+
+/** YELLOW */
+
+.yellow {
+    background: radial-gradient(yellow, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    grid-area: 'yellow';
+    border-bottom-left-radius: 100%;
+    border-top-right-radius: 60%;
+}
+
+/** GENERIC */
+
+.red,
+.green,
+.blue,
+.yellow {
+    cursor: pointer;
+}
+.audio {
+    display: none;
+}
+
+.selected {
+    filter: brightness(1.4);
+}
